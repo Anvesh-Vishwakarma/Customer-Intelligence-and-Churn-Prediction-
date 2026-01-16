@@ -1,8 +1,0 @@
-streamlit
-sklearn
-requests
-matplotlib
-numpy
-pandas
-FastAPI
-uvicorn
