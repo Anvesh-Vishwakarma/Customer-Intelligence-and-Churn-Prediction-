@@ -57,15 +57,11 @@ I aim to implement a machine learning model to accurately predict if the custome
 
 For the modelling, I will use tress based Ensemble method as we do not have linearity in this classification problem. Also, we have a class imbalance of 1:3 and to combat it I will assign class weightage of 1:3 which means false negatives are 3 times costlier than false positives. I built a model on 80% of data and validated model on remaining 20% of data keeping in mind that I do not have data leakage.
 
-The final model resulted in 0.62 F1 score and 0.85 ROC-AUC. The resulting plots can be seen below.
+The final model resulted in 0.85 F1 score and 0.71 ROC-AUC. The resulting plots can be seen below.
 
 <p align="center">
-<img src="https://github.com/archd3sai/Customer-Survival-Analysis-and-Churn-Prediction/blob/master/Images/model_1.png" width="600" height="300"/>
-<img src="https://github.com/archd3sai/Customer-Survival-Analysis-and-Churn-Prediction/blob/master/Images/model_feat_imp.png" width="600" height="400"/>
-
+<img src="https://github.com/Anvesh-Vishwakarma/Customer-Intelligence-and-Churn-Prediction-/blob/main/images/confusion_matrix.png" width="600" height="300"/>
 </p>
-
-From the feature importance plot, we can see which features govern the customer churn.
 
 ### Explainability
 
@@ -99,6 +95,7 @@ We can explain and understand the Random forest model using explainable AI modul
 I saved the final tuned Random Forest model and deployed it using Flask web app. Flask is a micro web framework written in Python.  It is designed to make getting started quick and easy, with the ability to scale up to complex applications. I saved the shap value explainer tuned using random forest model to show shap plots in app. I have also utilized the cox-proportional hazard model to show survival curve and hazard curve, and to calculate expected customer lifetime value. 
 
 The final app shows churning probability, gauge chart of how severe a customer is and shap values based on customer's data. The final app layout can be seen above.  
+
 
 
 
