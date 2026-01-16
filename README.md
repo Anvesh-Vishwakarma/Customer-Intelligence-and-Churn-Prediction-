@@ -3,3 +3,4 @@ I aim to implement a machine learning model to accurately predict if the custome
 
 ## Analysis
 **Tenure Relationship with Churn:**
+![image alt](https://github.com/Anvesh-Vishwakarma/Customer-Intelligence-and-Churn-Prediction-/blob/main/images/tenure-churn.png)
