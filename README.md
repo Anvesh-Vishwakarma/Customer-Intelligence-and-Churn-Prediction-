@@ -131,8 +131,9 @@ https://github.com/Anvesh-Vishwakarma/Customer-Intelligence-and-Churn-Prediction
 ```
 python -m venv venv
 ```
+Activate virtual enviornment
 ```
-source venv/Scripts/activate  # activate virtual enviornment
+source venv/Scripts/activate  
 ```
 
 ### 3. Install dependencies
@@ -152,6 +153,7 @@ Streamlit run frontend.py
 ```
 
 **NOTE: Make sure FastAPI running**
+
 
 
 
