@@ -87,14 +87,30 @@ The system follows a transparent, explainable pipeline:
 
 ## 🧮 Mathematical Breakdown of Revenue Savings
 
-### 1️⃣ Churn Population Estimation
+### 1️. Churn Population Estimation
 Let:
 - `N` = total number of subscribers  
 - `r_c` = churn rate  
 
-\text{math}
 Churners = N × r_c
 
+For a 30,000-subscriber base:
+        = 30,000 x 26.5
+        
+### 2️. Model Effectiveness (Recall on Churn Class)
+* r_m = model recall
+       CorrectlyIdentifiedChurners = 7,950 x 70
+       
+### 3️. Retention Campaign Success
+* r_s = retention success rate
+       RetainedCustomers = 5,565 x 70
+
+### 4️. Revenue Preservation Calculation
+Let:
+* ARPU = average monthly revenue per customer
+* T = revenue horizon (in months)
+       AnnualRevenueperCustomer = 74.44 x 12 = 893.28
+      TotalRevenueSaved = 3,896 x 893.28 ≈ 35Lakhsperyear
 ---
 
 ### 📌 Business Parameters
@@ -153,6 +169,7 @@ Streamlit run frontend.py
 ```
 
 **NOTE: Make sure FastAPI running**
+
 
 
 
