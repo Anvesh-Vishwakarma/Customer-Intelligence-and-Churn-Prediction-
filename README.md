@@ -90,11 +90,12 @@ We can explain and understand the Random forest model using explainable AI modul
 
 ![](https://github.com/archd3sai/Customer-Churn-Analysis-and-Prediction/blob/master/Images/shap.png)
 
-## Flask App
+## Streamlit App
 
-I saved the final tuned Random Forest model and deployed it using Flask web app. Flask is a micro web framework written in Python.  It is designed to make getting started quick and easy, with the ability to scale up to complex applications. I saved the shap value explainer tuned using random forest model to show shap plots in app. I have also utilized the cox-proportional hazard model to show survival curve and hazard curve, and to calculate expected customer lifetime value. 
+I saved the final tuned Random Forest model and deployed it using Streamlit web app. Streamlit is a micro web framework written in Python.  It is designed to make getting started quick and easy, with the ability to scale up to complex applications. 
 
-The final app shows churning probability, gauge chart of how severe a customer is and shap values based on customer's data. The final app layout can be seen above.  
+The final app shows churning probability.  
+
 
 
 
