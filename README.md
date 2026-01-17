@@ -122,12 +122,28 @@ The final app shows churning probability.
 
 ## How to run
 
-### 1️⃣ Clone the repository
+### 1️. Clone the repository
 ```bash
+https://github.com/Anvesh-Vishwakarma/Customer-Intelligence-and-Churn-Prediction-.git
 
+### 2️. Create Virtual Enviornment
+```bash
+python -m venv venv
+source venv/Scripts/activate
 
+### 3. Install dependencies
+```bash
+pip install -r requirements.txt
 
+### 4. Run the FastAPI which is inside api folder in app.py
+```bash
+uvicorn app:app --relaod
 
+### 5. Run the streamlit app in frontend.py
+```bash
+Streamlit run frontend.py
+
+### NOTE: Make sure FastAPI running
 
 
 
