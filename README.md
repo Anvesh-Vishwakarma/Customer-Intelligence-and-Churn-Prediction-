@@ -123,6 +123,7 @@ The final app shows churning probability.
 ## How to run
 
 ### 1️⃣ Clone the repository
+```bash
 
 
 
