@@ -63,28 +63,52 @@ The final model resulted in 0.85 F1 score and 0.71 ROC-AUC. The resulting plots 
 <img src="https://github.com/Anvesh-Vishwakarma/Customer-Intelligence-and-Churn-Prediction-/blob/main/images/confusion_matrix.png" width="600" height="300"/>
 </p>
 
-### Explainability
+## 📊 Business Impact & Model Explainability
 
-We can explain and understand the Random forest model using explainable AI modules such as Permutation Importance, Partial Dependence plots and Shap values.
+### Why Explainability Matters
+Predictive performance alone is not sufficient for real-world machine learning systems. This churn prediction model is designed to be **business-aware and explainable**, clearly translating model outputs into **measurable financial impact**. The goal is to enable proactive retention strategies that directly reduce customer churn and preserve recurring revenue.
 
-1. Permutation Importance shows feature importance by randomly shuffling feature values and measuring how much it degrades our performance.
+---
 
-<p align="center">
-<img src=https://github.com/archd3sai/Customer-Churn-Analysis-and-Prediction/blob/master/Images/eli51.png height=250 width=200>
-<img src=https://github.com/archd3sai/Customer-Churn-Analysis-and-Prediction/blob/master/Images/eli52.png height=130 width=200> 
-</p>
+## 🔍 Value Creation Pipeline
 
-2. Partial dependence plot is used to see how churning probability changes across the range of particular feature. For example, in below graph of tenure group, the churn probability decreases at a higher rate if a person is in tenure group 2 compared to 1.
+The system follows a transparent, explainable pipeline:
 
-<p align="center">
-<img src=https://github.com/archd3sai/Customer-Churn-Analysis-and-Prediction/blob/master/Images/pdp_tenure.png height=250 width=400>
-<img src=https://github.com/archd3sai/Customer-Churn-Analysis-and-Prediction/blob/master/Images/pdp_contract.png height=250 width=400> 
-</p>
+1. **Churn Risk Prediction**  
+   A supervised machine learning classifier generates churn probabilities for each customer.
 
-<p align="center">
-<img src=https://github.com/archd3sai/Customer-Churn-Analysis-and-Prediction/blob/master/Images/pdp_monthly_charges.png height=250 width=400>
-<img src=https://github.com/archd3sai/Customer-Churn-Analysis-and-Prediction/blob/master/Images/pdp_total_charges.png height=250 width=400> 
-</p>
+2. **High-Risk Customer Targeting**  
+   Customers exceeding a defined churn probability threshold are selected for retention campaigns.
+
+3. **Revenue Impact Estimation**  
+   Business impact is quantified by estimating how many high-risk customers can be successfully retained and the revenue preserved as a result.
+
+---
+
+## 🧮 Mathematical Breakdown of Revenue Savings
+
+### 1️⃣ Churn Population Estimation
+Let:
+- `N` = total number of subscribers  
+- `r_c` = churn rate  
+
+```math
+Churners = N × r_c
+
+---
+
+### 📌 Business Parameters
+
+| Parameter | Description | Value |
+|---------|------------|------|
+| Total subscribers | Customer base size | 30,000 |
+| Churn rate | Percentage of customers leaving | 26.5% |
+| Model recall | Correctly identified churners | 70% |
+| Retention success rate | Successfully retained churners | 70% |
+| Average monthly revenue | Revenue per customer | ₹74.44 |
+| Revenue horizon | Time window | 12 months |
+
+---
 
 3. Shap values (SHapley Additive exPlanations) is a game theoretic approach to explain the output of any machine learning model. In below plot we can see that why a particual customer's churning probability is less than baseline value and which features are causing them.
 
@@ -95,6 +119,7 @@ We can explain and understand the Random forest model using explainable AI modul
 I saved the final tuned Random Forest model and deployed it using Streamlit web app. Streamlit is a micro web framework written in Python.  It is designed to make getting started quick and easy, with the ability to scale up to complex applications. 
 
 The final app shows churning probability.  
+
 
 
 
