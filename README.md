@@ -133,7 +133,7 @@ python -m venv venv
 ```
 Activate virtual enviornment
 ```
-source venv/Scripts/activate  
+venv/Scripts/activate  
 ```
 
 ### 3. Install dependencies
@@ -153,6 +153,7 @@ Streamlit run frontend.py
 ```
 
 **NOTE: Make sure FastAPI running**
+
 
 
 
