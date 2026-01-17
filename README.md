@@ -120,6 +120,9 @@ I saved the final tuned Random Forest model and deployed it using Streamlit web 
 
 The final app shows churning probability.  
 
+## How to run
+
+
 
 
 
