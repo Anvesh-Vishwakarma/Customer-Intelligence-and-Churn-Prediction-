@@ -92,7 +92,7 @@ Let:
 - `N` = total number of subscribers  
 - `r_c` = churn rate  
 
-```math
+\text{math}
 Churners = N × r_c
 
 ---
@@ -119,6 +119,7 @@ Churners = N × r_c
 I saved the final tuned Random Forest model and deployed it using Streamlit web app. Streamlit is a micro web framework written in Python.  It is designed to make getting started quick and easy, with the ability to scale up to complex applications. 
 
 The final app shows churning probability.  
+
 
 
 
