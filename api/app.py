@@ -62,3 +62,6 @@ def predict_churn(data: input_data):
         "churn_prediction": "Yes" if prediction[0] == 1 else "No",
         "churn_probability": churn_prob
     }
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", debug=True)
