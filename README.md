@@ -3,7 +3,7 @@ I aim to implement a machine learning model to accurately predict if the custome
 
 --------------------------------------------------------------------------------------
 **Live Demo App** - https://customer-churn-prediction-00.streamlit.app/
---------------------------------------------------------------------------------------
+
 
 ### Analysis
 
