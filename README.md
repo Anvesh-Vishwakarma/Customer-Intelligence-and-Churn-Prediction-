@@ -1,6 +1,8 @@
 ## Customer Churn Prediction
 I aim to implement a machine learning model to accurately predict if the customer will churn or not.
 
+**Live Demo App** - https://customer-churn-prediction-00.streamlit.app/
+
 ### Analysis
 
 **Churn and Tenure Relationship:**
