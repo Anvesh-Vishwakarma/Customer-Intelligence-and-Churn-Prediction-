@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 from sklearn.metrics import roc_curve, auc
 import numpy as np
 
-API_URL = "https://fastapi-churn-prediction.onrender.com"  
+API_URL = "https://fastapi-churn-prediction.onrender.com/predict"  
 
 st.title("Churn Prediction")
 
